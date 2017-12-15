@@ -21,9 +21,9 @@ SEAN = '+13057266671'
       message = 'we cannot get to the phone right now please push the Extension number you need or 9 for the operator. For Robert Feldmand press 1, For shapiro press 2, for accounting press 3, paralegal, 4, reception, 5.'
       response = Twilio::TwiML::VoiceResponse.new do |r|
         r.gather numDigits: '1', action: menu_path do |g|
-          g.say welcome, voice: 'man', language: 'en-GB'
+          g.say welcome, voice: 'alice', language: 'en-GB'
           g.pause(length: 1)
-          g.say message, voice: 'man', language: 'en-GB'
+          g.say message, voice: 'alice', language: 'en-GB'
           g.pause(length: 5)
         end
         r.say "I'm sorry. I haven't received a response. Please try again later.", voice: 'alice', language: 'en-GB'
