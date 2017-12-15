@@ -24,7 +24,8 @@ SEAN = '+13057266671'
           g.say welcome, voice: 'alice', language: 'en-GB'
           g.pause(length: 1)
           g.say message, voice: 'alice', language: 'en-GB'
-          g.pause(length: 5)
+          g.pause(length: 8)
+          g.say message, voice: 'alice', language: 'en-GB'
         end
         r.say "I'm sorry. I haven't received a response. Please try again later.", voice: 'alice', language: 'en-GB'
         r.hangup
